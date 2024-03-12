@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.parent h3{
+    font-size: 3rem;
+    color: #d3d3d3;
+    text-shadow: 0 0 2px blueviolet;
+    animation-name: changecolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.parent p{
+    margin: 0.4rem;
+    font-family: cursive;
+    color: #333;
+    animation-name: changecolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.parent i{
+    display: block;
+    margin: 1rem 0;
+}
+
+.parent button{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    background-color: #333;
+    color: #fff;
+
+
+}
+
+.parent img{
+    flex: 1;
+    animation-name: animelmg;
+    animation-duration: 10s;
+}
+
+.parent div{
+    flex: 1;
+    /* text-align: center; */
+
+}
+
+@keyframes changecolor{
+
+    from{
+        color: red;
+            /*font-size: 1rem; */
+         /* transform: rotate(360deg); */
+        }
+        to{
+            color: green;
+            font-size: 1.5rem;
+            transform: rotate(-360deg);
+         }
+}
+
+@keyframes animelmg{
+
+    25%{
+        transform: scale(1.2);
+
+    }
+
+    50%{
+        transform: scale(1);
+
+    }
+    75%{
+        transform: scale(1.2);
+
+    }
+}
+
+@media (max-width: 778px) {
+    
+    .parent{
+        flex-direction: column;
+    }
+}

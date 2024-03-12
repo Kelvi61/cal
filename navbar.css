@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallscreen{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    display: none;
+}
+
+ @media (max-width: 576px) {
+
+    button{
+        display: block;
+    }
+
+
+
+}
